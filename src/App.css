@@ -1,0 +1,89 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.dayCards > div {
+  background: #BBBBBB;
+  padding: 20px;
+  padding-bottom: 25px;
+  border: solid grey 1px;
+  border-radius: 10px;
+  min-width: 100px;
+  transition: .25s;
+}
+
+.dayCards > div:hover {
+  background: #848484;
+  transition: .25s;
+}
+
+.dayCards > div h3 {
+  margin-top: 0;
+}
+
+.city {
+  display: block;
+  background: #BBB;
+  width: 10%;
+  min-width: 200px;
+  margin: auto;
+  border: solid grey 1px;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.temp-chart {
+  background: #BBB;
+  border: solid grey 1px;
+  border-radius: 5px;   
+  width: 700px;
+  padding: 0px 30px 25px;
+  height: 100%;
+}
+
+.chartjs-render-monitor {
+  background: white;
+}
+
+.selected-day-info {
+  margin: auto;
+  max-width: 650px;
+  display: flex;
+  justify-content: space-evenly;
+  background: #BBB;
+  border-radius: 5px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border: solid grey 1px;
+  padding: 10px;
+}
+
+.selected-day-info p {
+  font-size: 24px;
+  margin: auto 0px;
+}
+
+.selected-day-info img {
+  min-width: 100px;
+}
