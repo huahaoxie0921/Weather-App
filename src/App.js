@@ -11,13 +11,13 @@ export default function App() {
 
   const getCurrentData = (zip) => {
       axios
-        .get("https://api.openweathermap.org/data/2.5/weather?zip="+ zip +",us&units=imperial&appid=" + process.env.APIKEY)
+        .get("https://api.openweathermap.org/data/2.5/weather?zip="+ zip +",us&units=imperial&appid=" + process.env.REACT_APP_APIKEY)
         .then(response => setcurrentData(response.data));
   }
 
   const getForecastData = (zip) => {
       axios
-        .get("https://api.openweathermap.org/data/2.5/forecast?zip=" + zip + ",us&units=imperial&appid=" + process.env.APIKEY)
+        .get("https://api.openweathermap.org/data/2.5/forecast?zip=" + zip + ",us&units=imperial&appid=" + process.env.REACT_APP_APIKEY)
         .then(response => setforecastData(response.data));
   }
 
